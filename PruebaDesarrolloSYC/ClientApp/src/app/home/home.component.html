@@ -1,0 +1,26 @@
+<h1>Hello, world!</h1>
+<p>Formulario de Factura</p>
+
+<form>
+
+  <label for="numeDoc">Número de documento: </label>
+  <input id="numeDoc" type="number">
+  <br />
+  <label for="valorFac">Valor de la factura: </label>
+  <input id="valorFac" type="text">
+  <br />
+  <label for="codiEstado">Código de estado: </label>
+  <select id="codiEstado">
+    <option value="1">Vigente</option>
+    <option value="2">Pagada</option>
+    <option value="3">Vencida</option>
+  </select>
+  <br />
+  <label for="fechaFac">Valor de la factura: </label>
+  <input type="date" id="fechaFac" name="trip-start"
+         value="2021-01-01"
+         min="1950-01-01" max="2050-12-31">
+  <br />
+  <button (click)="onSubmit()">Insertar </button>
+
+</form>
